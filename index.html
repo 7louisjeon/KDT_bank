@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Nato Sans KR -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Reset -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./src/css/style.css" />
+
+    <!-- Script -->
+    <script defer src="./src/js/app.js"></script>
+
+    <!-- Title -->
+    <title>KDT_Bank</title>
+  </head>
+  <body>
+    <div class="app">
+      <div class="main-page">
+        <header>
+          <div class="header-left">
+            <img src="./src/images/avatar.png" alt="" />
+          </div>
+          <h1 class="title">생활비</h1>
+          <div class="header-right">
+            <img class="QR" src="./src/images/pay.png" alt="" />
+            <img class="search" src="./src/images/search.png" alt="" />
+          </div>
+        </header>
+        <main>
+          <section class="total">
+            <div class="card">
+              <header>
+                <div class="account-number">355-673877-78773</div>
+                <button>이체</button>
+              </header>
+              <div class="amount">
+                <strong>1,240,000</strong>
+                <span>원</span>
+              </div>
+              <div class="slide">
+                <div class="slider">
+                  <div class="card-slidebar">
+                    <div class="yellow-bar"></div>
+                    <div class="setter-around">
+                      <div class="orange-setter"></div>
+                    </div>
+                  </div>
+                </div>
+                <button class="manageBtn">
+                  <img src="./src/images/chart.png" alt="" />
+                </button>
+              </div>
+              <footer>5일 동안 210,000원 남음</footer>
+            </div>
+            <aside>
+              지금 낮은 이자로 생활대출을 신청하세요! <span>Go</span>
+            </aside>
+          </section>
+          <section class="details">
+            <div class="toggle-outter">
+              <div class="toggle" draggable="true"></div>
+            </div>
+            <div class="slider swiper goals">
+              <ul class="slides swiper-wrapper">
+                <li class="slide swiper-slide">
+                  <div class="gauge orange">
+                    <p>여행가자!</p>
+                    <p>842,200원</p>
+                  </div>
+                </li>
+                <li class="slide swiper-slide">
+                  <div class="gauge yellow">
+                    <p>냉장고사기</p>
+                    <p>142,200원</p>
+                  </div>
+                </li>
+                <li class="slide swiper-slide">
+                  <img src="./src/images/btn.png" alt="" />
+                  <span> 저금통 만들기</span>
+                </li>
+              </ul>
+            </div>
+            <div class="swiper days">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="day">
+                    <div class="day-title">
+                      <h3>오늘</h3>
+                      <div class="amount">127,600원 지출</div>
+                    </div>
+                    <ol class="spendings">
+                      <li>
+                        <p class="name">미스터피자</p>
+                        <p class="amount">32,000</p>
+                      </li>
+                      <li>
+                        <p class="name">택시</p>
+                        <p class="amount">4,800</p>
+                      </li>
+                      <li>
+                        <p class="name">이마트</p>
+                        <p class="amount">86,000</p>
+                      </li>
+                      <li>
+                        <p class="name">스타벅스</p>
+                        <p class="amount">4,800</p>
+                      </li>
+                      <li>
+                        <p class="name">전길수</p>
+                        <p class="amount income">+20,000</p>
+                      </li>
+                    </ol>
+                  </div>
+                  <div class="day">
+                    <div class="day-title">
+                      <h3>어제</h3>
+                      <div class="amount">71,600원 지출</div>
+                    </div>
+                    <ol class="spendings">
+                      <li>
+                        <p class="name">CU</p>
+                        <p class="amount">8,900</p>
+                      </li>
+                      <li>
+                        <p class="name">김경남</p>
+                        <p class="amount income">+31,000</p>
+                      </li>
+                      <li>
+                        <p class="name">애슐리</p>
+                        <p class="amount">31,000</p>
+                      </li>
+                      <li>
+                        <p class="name">교보문고</p>
+                        <p class="amount">18,000</p>
+                      </li>
+                      <li>
+                        <p class="name">쿠팡</p>
+                        <p class="amount">10,500</p>
+                      </li>
+                      <li>
+                        <p class="name">미스터피자</p>
+                        <p class="amount">32,000</p>
+                      </li>
+                    </ol>
+                  </div>
+                  <div class="day">
+                    <div class="day-title">
+                      <h3>2일전</h3>
+                      <div class="amount">64,000원 지출</div>
+                    </div>
+                    <ol class="spendings">
+                      <li>
+                        <p class="name">알파문구</p>
+                        <p class="amount">46,000</p>
+                      </li>
+                      <li>
+                        <p class="name">스타벅스</p>
+                        <p class="amount">18,000</p>
+                      </li>
+                      <li>
+                        <p class="name">미스터피자</p>
+                        <p class="amount">32,000</p>
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+      <div class="manage-page">
+        <section>
+          <h2>지출 관리</h2>
+          <div class="standard">
+            <h3 class="title">기준금액설정</h3>
+            <div class="price">2,100,000원</div>
+          </div>
+          <div class="slider">
+            <div class="manage-slidebar">
+              <div class="yellow-bar"></div>
+              <div class="setter-around">
+                <div class="orange-setter"></div>
+              </div>
+            </div>
+          </div>
+          <div class="daily-report">
+            <h3 class="title">일간 리포트</h3>
+            <div class="graph">div.graph</div>
+          </div>
+          <div class="month-pattern">
+            <h3 class="title">6월 지출 패턴</h3>
+            <div class="graph">div.graph</div>
+            <ul>
+              <li>
+                <div class="image-outter">
+                  <img src="./src/images/oil.png" alt="" />
+                </div>
+                <p class="category">주유비</p>
+                <p class="amount">56,000원</p>
+              </li>
+              <li>
+                <div class="image-outter">
+                  <img src="./src/images/health.png" alt="" />
+                </div>
+                <p class="category">건강관리비</p>
+                <p class="amount">80,000원</p>
+              </li>
+              <li>
+                <div class="image-outter">
+                  <img src="./src/images/meal.png" alt="" />
+                </div>
+                <p class="category">외식비</p>
+                <p class="amount">233,000원</p>
+              </li>
+              <li>
+                <div class="image-outter">
+                  <img src="./src/images/shopping.png" alt="" />
+                </div>
+                <p class="category">장보기</p>
+                <p class="amount">390,000원</p>
+              </li>
+              <li>
+                <div class="image-outter">
+                  <img src="./src/images/market.png" alt="" />
+                </div>
+                <p class="category">상점</p>
+                <p class="amount">46,000원</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <button class="closeManagePageBtn">닫기</button>
+      </div>
+      <nav>
+        <ul>
+          <li><img src="./src/images/mdi_home.png" alt="" /></li>
+          <li><img src="./src/images/Group 28.png" alt="" /></li>
+          <li><img src="./src/images/message.png" alt="" /></li>
+          <li><img src="./src/images/more.png" alt="" /></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- SwiperJS -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var goalsSwiper = new Swiper(".goals", {
+        slidesPerView: 1.9,
+        spaceBetween: 1,
+        freeMode: true,
+        pagination: {
+          clickable: true,
+        },
+      });
+      var daysSwiper = new Swiper(".days", {
+        direction: "vertical",
+        slidesPerView: "auto",
+        freeMode: true,
+        mousewheel: true,
+      });
+    </script>
+  </body>
+</html>
