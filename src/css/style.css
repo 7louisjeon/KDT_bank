@@ -6,6 +6,40 @@
   position: relative;
 }
 
+input[type="range"] {
+  width: 100%;
+  -webkit-appearance: none;
+  background: transparent;
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  background: #c4c4c4;
+  height: 6px;
+  border-radius: 3px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: orangered;
+  cursor: pointer;
+  border: 1px solid white;
+  height: 18px;
+  width: 6px;
+  margin-top: -5px;
+  border-radius: 3px;
+}
+
+input[type="range"].thick::-webkit-slider-thumb {
+  width: 8px;
+  height: 22px;
+  border-color: #eee;
+  margin-top: -7px;
+}
+
 /* --------------------- MAIN PAGE ---------------------- */
 
 .main-page {
@@ -57,6 +91,8 @@
 .main-page > main {
   height: calc(90vh - 50px);
 }
+
+/* -------------------------- TOTAL SECTION ---------------------------------- */
 
 .main-page > main > section.total {
   display: flex;
@@ -118,42 +154,23 @@
 }
 
 .card > .slide > .slider {
-  height: 35px;
+  display: block;
   width: calc(100vw - 170px);
   margin: auto;
   margin-right: 42px;
-  padding-top: 17px;
+  padding-top: 15px;
   position: relative;
 }
 
-.card-slidebar {
-  background-color: #bbb;
-  border-radius: 5px;
-  height: 6px;
-  overflow: hidden;
-}
-
 .yellow-bar {
-  height: 5px;
+  position: absolute;
+  top: 15px;
+  left: 28px;
+  height: 6px;
   background-color: rgb(255, 230, 0);
   width: 33vw;
-}
-
-.setter-around {
-  position: absolute;
-  background-color: white;
-  width: 6px;
-  bottom: 26px;
-  left: 36vw;
-  display: flex;
-  justify-content: center;
-}
-
-.orange-setter {
-  height: 12px;
-  width: 3px;
-  background-color: orangered;
-  border-radius: 5px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
 }
 
 .card > .slide > button {
@@ -184,9 +201,25 @@ section.total > aside > span {
   text-decoration: underline;
 }
 
+/* ------------------------ DETAILS SECTION ------------------------- */
+.detailsSwiper {
+  position: absolute;
+  top: 70px;
+  height: 10px;
+}
+
+.detailsSwiper > .swiper-wrapper {
+  height: 10px;
+}
+
+.detailsSlideUpper {
+  background-color: transparent;
+  width: 10px;
+}
+
 section.details {
   background-color: white;
-  height: calc(100vh - 387px);
+  height: calc(100vh - 150px);
   padding: 3px 0 0 0;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
@@ -273,7 +306,15 @@ section.details {
   margin-top: 85px;
   padding: 0 40px;
   overflow: hidden;
-  height: 340px;
+  height: calc(100vh - 474px);
+}
+
+.days {
+  height: calc(100vh - 233px);
+}
+
+.days > .swiper-wrapper > .swiper-slide {
+  height: 6000px;
 }
 
 .day + .day {
@@ -289,7 +330,7 @@ section.details {
 
 .day-title > h3 {
   height: 30px;
-  width: 50px;
+  width: 100px;
   font-size: 14px;
   font-weight: bold;
 }
@@ -321,10 +362,14 @@ ol.spendings > li + li {
 
 ol.spendings > li > p {
   height: 30px;
-  width: 150px;
+}
+
+ol.spendings > li > .name {
+  width: 200px;
 }
 
 ol.spendings > li > .amount {
+  width: 100px;
   text-align: right;
   font-weight: lighter;
 }
@@ -342,7 +387,9 @@ ol.spendings > li > .amount.income {
   left: 0;
   bottom: 76px;
   right: 0;
-  overflow: scroll;
+  overflow-y: scroll;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 .manage-page.on {
@@ -398,18 +445,26 @@ ol.spendings > li > .amount.income {
   padding-top: 10px;
 }
 
-.manage-page > section {
-  padding: 0px 30px 0 30px;
-}
-
 .manage-page > section > h2 {
   font-size: 23px;
   font-weight: bold;
   margin-top: 40px;
+  padding: 5px 30px;
 }
 
-.manage-page > section > .standard {
-  margin-top: 30px;
+.manage-main {
+  padding: 0px 30px;
+  height: calc(100vh - 149px);
+  overflow: hidden;
+}
+
+.manage-slide {
+  border: 1px solid transparent;
+  position: relative;
+}
+
+.manage-slide > .standard {
+  margin-top: 50px;
   display: flex;
   justify-content: space-between;
 }
@@ -419,56 +474,61 @@ ol.spendings > li > .amount.income {
   color: orangered;
 }
 
-.manage-page > section > .slider {
-  margin-top: 50px;
+.standard-bar {
+  position: relative;
+}
+
+.standard-bar > .slider {
+  margin-top: 20px;
   height: 30px;
   position: relative;
 }
 
-.manage-slidebar {
-  background-color: #bbb;
-  border-radius: 5px;
-  height: 6px;
-  overflow: hidden;
-  margin-top: 10px;
+.standard-bar > .yellow-bar {
+  width: 50vw;
+  position: absolute;
+  top: 32px;
+  left: 0;
 }
 
-.manage-slidebar > .setter-around {
-  top: -10px;
-  width: 10px;
-  height: 30px;
-  background-color: #eee;
-  border-radius: 3px;
-}
-
-.manage-slidebar > .setter-around > .orange-setter {
-  width: 7px;
-  height: 25px;
-  border-radius: 3px;
-  margin: auto;
-}
-
-.manage-page > section > .daily-report {
+.manage-slide > .daily-report {
   margin-top: 50px;
 }
 
-.manage-page > section > article > .title {
+.manage-slide > .daily-report > .title {
   height: 24px;
-  padding-top: 6px;
 }
 
-.daily-report > .graph {
-  height: 200px;
-  background-color: purple;
+.daily-graph > .swiper-wrapper {
+  width: max-content;
 }
 
-.manage-page > section > .month-pattern {
-  margin-top: 30px;
+.manage-slide > .month-pattern {
+  margin-top: 40px;
 }
 
 .month-pattern > .graph {
-  height: 308px;
-  background-color: purple;
+  position: relative;
+  margin-top: 10px;
+}
+
+.month-pattern-amount {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+}
+
+.month-pattern-amount > span {
+  margin: auto;
+}
+
+.month-pattern-amount > span > strong {
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 1px;
 }
 
 .month-pattern > ul {
@@ -504,6 +564,7 @@ ol.spendings > li > .amount.income {
 .app > nav {
   background: linear-gradient(#00bdb2, #c4e7b8);
   height: 76px;
+  position: absolute;
 }
 
 .app > nav > ul {

@@ -1,11 +1,19 @@
 // DETAILS SECTION TOGGLE
 
-const toggle = document.querySelector(".toggle");
+// const toggle = document.querySelector(".toggle");
+// const details = document.querySelector(".details");
+// const days = document.querySelector(".days");
 
-toggle.addEventListener("dragstart", (e) => {
-  e.preventDefault();
-  alert("drag");
-});
+// toggle.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   if (details.classList.contains("toggledUp")) {
+//     details.classList.remove("toggledUp");
+//     days.classList.remove("toggledUp");
+//   } else {
+//     details.classList.add("toggledUp");
+//     days.classList.add("toggledUp");
+//   }
+// });
 
 // MANAGE PAGE TOGGLE
 

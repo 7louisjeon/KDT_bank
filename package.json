@@ -1,0 +1,25 @@
+{
+  "name": "kdt_bank",
+  "version": "1.0.0",
+  "description": "Toy project 1 - design banking app",
+  "main": "index.html",
+  "dependencies": {
+    "chart.js": "^3.5.1",
+    "swiper": "^7.0.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/7louisjeon/KDT_bank.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/7louisjeon/KDT_bank/issues"
+  },
+  "homepage": "https://github.com/7louisjeon/KDT_bank#readme",
+  "type": "module"
+}
