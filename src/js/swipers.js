@@ -1,5 +1,6 @@
 const detailsSwiper = new Swiper(".detailsSwiper", {
   direction: "virtical",
+  threshold: 10,
   grabCursor: true,
   effect: "creative",
   slidesPerView: "1",
