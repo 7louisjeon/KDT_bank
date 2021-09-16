@@ -7,9 +7,12 @@
     "chart.js": "^3.5.1",
     "swiper": "^7.0.5"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "repository": {
     "type": "git",
@@ -21,5 +24,6 @@
     "url": "https://github.com/7louisjeon/KDT_bank/issues"
   },
   "homepage": "https://github.com/7louisjeon/KDT_bank#readme",
-  "type": "module"
+  "type": "module",
+  "keywords": []
 }

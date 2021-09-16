@@ -214,7 +214,7 @@ section.total > aside > span {
 
 .detailsSlideUpper {
   background-color: transparent;
-  width: 10px;
+  width: 100vw;
 }
 
 section.details {
