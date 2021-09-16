@@ -25,5 +25,8 @@
   },
   "homepage": "https://github.com/7louisjeon/KDT_bank#readme",
   "type": "module",
-  "keywords": []
+  "keywords": [],
+  "browserslist": [
+    "since 2017-06"
+  ]
 }

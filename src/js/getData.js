@@ -1,5 +1,3 @@
-import "regenerator-runtime/runtime";
-
 const getData = async () => {
   try {
     const data = await fetch("https://syoon0624.github.io/json/test.json").then(
